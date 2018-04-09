@@ -1,9 +1,9 @@
 # MSDN Key Manager
 
-This is a tool to help merging multiple MSDN product key export XMLs.
+This is a cli and gui tool to help merging multiple MSDN product key export XMLs.
 
 ```
-usage: main.py [-h] [--output OUTPUT] [INPUTS [INPUTS ...]]
+usage: cli.py [-h] [--output OUTPUT] [INPUT [INPUT ...]]
 
 Merging multiple MSDN product key export XMLs.
 
@@ -12,5 +12,5 @@ positional arguments:
 
 optional arguments:
   -h, --help       show this help message and exit
-  --output OUTPUT  Output path, default out.xml
+  --output OUTPUT  Output path, default output.xml
 ```

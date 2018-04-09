@@ -1,15 +1,7 @@
-import argparse
 import untangle
 from models import ProductKey, Product
 
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Merging multiple MSDN product key export XMLs.')
-    parser.add_argument('INPUT', nargs='*', help='Input files')
-    parser.add_argument('--output', default='out.xml', help='Output path, default out.xml')
-    args = parser.parse_args()
-    docs = args.INPUT
-    out = args.output
-
+def merge(docs, out):
     products = {}
 
     for f in docs:
